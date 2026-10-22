@@ -8,7 +8,7 @@
   <style>
     :root {
   color-scheme: dark;
-
+  --card: #151a35;
   --bg: #0b1026;
   --text: #f7f2ff;
   --primary: #a855f7;
@@ -55,13 +55,14 @@
     }
 
     section {
-      background: white;
-      margin: 30px auto;
-      padding: 25px;
-      max-width: 650px;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px #00000010;
-    }
+  background: var(--card);
+  color: var(--text);
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 650px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px #00000010;
+}
 
     h2 {
       color: #6c4ab6;
