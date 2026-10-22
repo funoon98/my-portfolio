@@ -89,6 +89,9 @@ section p {
 </head>
 
 <body>
+  <button id="theme-toggle" type="button">
+  ☀️ الوضع الفاتح
+  </button>
   <header>
     <h1>مرحبًا بكم في ملف أعمالي ✨</h1>
     <p>
@@ -134,5 +137,18 @@ section p {
   <footer>
     <p>© 2026 — ملف أعمالي الشخصي</p>
   </footer>
+  <script>
+  const themeToggle = document.getElementById("theme-toggle");
+
+  themeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+      themeToggle.textContent = "🌙 الوضع الداكن";
+    } else {
+      themeToggle.textContent = "☀️ الوضع الفاتح";
+    }
+  });
+  </script>
 </body>
 </html>
